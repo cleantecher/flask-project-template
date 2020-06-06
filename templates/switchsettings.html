@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"> </div>
+        <div class="col-md-6">
+            <div class="selection" style="margin-top: 20px; background-color:#595959; color: #f2f2f2; font-weight: bold;">Buy Settings </div>
+             <div class="selection" style="margin-top: 5px;">Auto Buy
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+             </div> 
+             <div class="selection" style="margin-top: 5px;">Buy when price is over XX 
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+             </div> 
+             <div class="selection" style="margin-top: 5px;">Confirm all purchases 
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+             </div> 
+             <div class="selection" style="margin-top: 20px;background-color:#595959; color: #f2f2f2; font-weight: bold;">Sell Settings </div>
+             <div class="selection" style="margin-top: 5px;">Auto Sell
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+             </div> 
+             <div class="selection" style="margin-top: 5px;">Sell when price is over XX 
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+             </div> 
+             <div class="selection" style="margin-top: 5px;">Confirm all sales 
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+             </div>  
+        </div>  
+    </div>
+    <div class="col-md-3"></div> 
+</div>
+{{super()}}
+{% endblock %}

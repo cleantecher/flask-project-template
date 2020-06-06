@@ -1,0 +1,399 @@
+
+/* color scheme 
+techer_teal= #00B5B5
+techer_light_background= #fffff
+techer_dark_background=#595959
+techer_grey+2_light_backgound=#262626 
+techer_grey+1_light_backgound=techer_dark_background
+techer_grey-0_light_background=#F2F2F2
+techer_grey-1_dark_background=#595959
+techer_grey-2-dark_background=#C7C7C7
+techer_grey-3-dark_background=techer_light_background
+techer_red_error=#9E2600
+techer_blue-2=#8BCDFF
+techer_blue-1=#2DA5FF
+techer_blue-0=#0081E2
+techer_blue+1=#00589A
+techer_blue+2=#004376
+*/
+
+/* this is the initial sign in body background */
+.iniital {
+    background-color: #00B5B5;
+    padding-top:0px;
+    margin-top: 0px;
+    color: white;   
+    font-weight: bold;
+}
+
+
+/* navigation bar formating */
+.navbar-custom {
+    background-color: #00B5B5;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgb(238, 237, 232);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color:hsl(15, 100%, 99%);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #595959;
+}
+/* footer formating */
+.footer {
+    width: 100%;
+    height:5%;
+    color:white;
+    background: #00B5B5;
+    position: absolute;
+    bottom: 0;
+    font-size: small;
+    text-align: center;
+}
+
+/* text formatting on dark background */
+.dark_background {
+    color: white;
+    font-family: Helvetica;
+    font-weight: normal;
+    text-align: center;
+    padding: 0%;
+}
+
+/* text formatting on light background */
+p {
+    color: #595959;
+    font-family: Helvetica;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/* aligning objects vertically */
+.vertical_align {
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    vertical-align: bottom;
+    margin-bottom: 0px;
+}
+
+.top_align {
+    position: relative;
+    top: 10%;
+    transform: translateY(10%);
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+/* button formatting - includes hovers*/
+.dark_on_light_button {
+    background-color: #595959;
+    color:white;
+    font-family: Helvetica;
+    font-size: large;
+    height: 75pt;
+    border-radius: 37.5px;
+}
+.dark_on_light_button:hover {
+    background-color: #3B3838;
+}
+.light_on_dark_button {
+    background-color: white;
+    color:#595959;
+    font-family: Helvetica;
+    font-size: large;
+    height: 75pt;
+    border-radius: 37.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light_on_dark_button:hover {
+    background-color: #F2F2F2;
+  }
+  .light_on_dark_buttonG_2 {
+    background-color:#F2F2F2;
+    color: #595959;
+    font-family: Helvetica;
+    font-size: large;
+    display: flex;
+    justify-content: Right;
+    align-items: center;
+}
+
+/* .light_on_dark_buttonG_2:hover {
+    background-color: #F2F2F2;
+  } */
+
+.light_on_dark_button_s {
+    background-color: white;
+    color:#595959;
+    font-family: Helvetica;
+    font-size: large;
+    height: 20pt;
+    width: 20pt;
+    border-radius: 10px;
+}
+
+.light_on_dark_button_s:hover {
+    background-color: #F2F2F2;
+  }
+  .dark_on_light_button_s {
+    background-color: #595959;
+    color:white;
+    font-family: Helvetica;
+    font-size: large;
+    height: 75pt;
+    border-radius: 37.5px;
+}
+.dark_on_light_button_s:hover {
+    background-color: #3B3838;
+}
+
+
+
+.light_on_dark_button_fwidth {
+    background-color: white;
+    border-color: #595959 ;
+    color:#595959;
+    font-family: Helvetica;
+    font-size: large;
+    width:50pt;
+    height:50pt;
+    border-radius: 25pt;
+}
+.light_on_dark_button_fwidth:hover {
+    background-color: #F2F2F2;
+  }
+
+.dolb_signup {
+    background-color: #595959;
+    color:white;
+    font-family: Helvetica;
+    font-size: large;
+    height: 30pt;
+    border-radius: 15pt;
+}
+.dolb_signup:hover {
+    background-color: #3B3838;
+}
+
+.facebook_signup {
+    background-color: #4267B2;
+    border-color: white;
+    border-width: medium;
+    color: white;
+    font-family: Helvetica;
+    font-size: large;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50pt;
+    border-radius: 25pt;
+}
+.facebook_signup:hover {
+    background-color: rgba(66, 103, 178, 0.449);
+}
+
+.google_signup {
+    background-color: #0F9D58;
+    color: white;
+    border-color: white;
+    border-width: medium;
+    font-family: Helvetica;
+    font-size: large;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50pt;
+    border-radius: 25pt;
+}
+.google_signup:hover {
+    background-color: rgba(15, 157, 88, 0.591);
+}
+/* button without fixed height */
+.dark_on_light_button_dh {
+    background-color: #595959;
+    color:white;
+    font-family: Helvetica;
+    font-size: large;
+}
+.dark_on_light_button_dh:hover {
+    background-color: #3B3838;
+}
+
+/* round button */
+.roundbutton {
+    background-color: #595959;
+    font-family: Helvetica;
+    font-size: large;
+    height: 200pt;
+    width: 200pt;
+    border-radius: 50%;
+    margin-top: 20px;
+    outline: none;
+    border-radius: 50%;
+}
+.roundbutton:hover {
+    background-color:#3B3838;
+}
+
+/* border added to the input boxes */
+.form-control {
+    border-color: #595959 ;
+}
+/* container formatting with light background */
+.container_light {
+    background-color: #F2F2F2;
+    border-color: #595959;
+}
+
+
+/*https://bbbootstrap.com/snippets/payment-form-three-different-payment-options-13285516   */
+
+.rounded {
+    border-radius: 1rem
+}
+
+.nav-pills .nav-link {
+    color: #595959
+}
+
+.nav-pills .nav-link.active {
+    color: white;
+    background-color: #595959;
+    
+}
+
+input[type="radio"] {
+    margin-right: 5px
+}
+
+.bold {
+    font-weight: bold
+}
+
+/* pulse animation code for when the app is searching for the device */
+
+.searching {
+	background-color: #595959;
+	border-radius: 50%;
+	height: 200pt;
+    width: 200pt;
+    outline:none;
+
+	box-shadow: 0 0 0 0 rgba(242, 242,242, 242);
+    animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(242, 242, 242, 0.7), 0 0 0 0 rgba(242, 242, 242, 0.7);
+	}
+	33% {
+		box-shadow: 0 0 0 50px rgba(242, 242, 242, 0), 0 0 0 0 rgba(242, 242, 242, 0.7);
+	}
+	66% {
+		box-shadow: 0 0 0 50px rgba(242, 242, 242, 0), 0 0 0 50px rgba(242, 242, 242, 0);
+    }
+    100% {
+		box-shadow: 0 0 0 0 rgba(242, 242, 242, 0), 0 0 0 50px rgba(242, 242, 242, 0);
+    }
+}
+
+.setting {
+    width:100%;
+    text-align: center;
+    height: 25px;
+    color: #00B5B5;
+    text-align: right;
+ }
+/* The switch - the box around the slider  the display 
+    of inline float is being ignored*/
+.switch {
+    position: relative;
+    float: right;
+    /* display: inline-block; */
+    vertical-align: middle;
+    width: 40px;
+    height: 20px;
+    bottom: 25%;
+    transform: translateY(25%);
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 16px;
+    left: 2px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #00B5B5;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #00B5B5;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 20px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+.selection {
+    background-color: #F2F2F2;
+    border-bottom: 1px dotted #00B5B5;
+    font-size: 20px;
+    color: #595959;
+    font-family: helvetica;
+    vertical-align: middle;
+    border-radius: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}

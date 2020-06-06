@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block body %}
+<body class="iniital">
+
+    <div class="container">
+        <div class="row ">
+        <div class="col-md-1"></div>
+                <div class= "col-md-10 top_align">
+                    <h2 class="dark_background"> Lets get your Account Set Up</h2> 
+                    <p class = "dark_background mb-3"> Please fill out the following information<hr style="background-color: white"></p>
+                    <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+ <!-- add the best way to specify required items -->
+                            <label for="inputEmail4" >First Name</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="First Name">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Last Name</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Last Name">
+                          </div>
+                        </div>
+<!-- add the auto correct for the address bar -->
+                        <div class="form-group">
+                          <label for="inputAddress">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress2">Address 2</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-8">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+ <!-- change the state options needed -->
+                              <option selected>Choose...</option>
+                              <option>Alberta</option>
+                              <option>British Columbia</option>
+                              <option>Ontario</option>
+
+                            </select>
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="inputZip">Zip/ Postal Code</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
+                        </div>
+                        <button type="submit" class="btn dark_on_light_button_dh btn-block" >Sign in</button>
+                        <hr style="background-color: white">
+                      </form>
+                </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+</body>
+{% endblock %}

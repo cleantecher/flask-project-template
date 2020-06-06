@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block body %}
+<body class="iniital">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"> </div>
+            <div class="col-md-6 vertical_align">
+                <h2 class="dark_background">Welcome Back!</h2>
+                <p class="dark_background"> Enter Email and Password</p>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <button class="btn light_on_dark_button_fwidth" type="button">@</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Email" >
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <button class="btn light_on_dark_button_fwidth" type="button"><i class="fas fa-lock"></i></button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Password">
+                </div>
+                    <button class="btn dolb_signup btn-block mt-3" type="button">Sign In!</button>
+
+                    <div class= "row">
+                        <div class="col">
+                            <button class="google_signup btn-block mt-3" type="button" style="font-weight:bold;white-space:normal;display:inline-flex">
+                                <i class="fab fa-google" style="font-size: x-large;"> </i>
+                                Google Sign In!
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="facebook_signup btn-block mt-3" type="button" style="font-weight:bold;white-space:normal;display:inline-flex">
+                                <i class="fab fa-facebook" style="font-size: x-large;"></i>
+                                Facebook Sign In!
+                            </button>
+                        </div>
+                    </div>    
+                    <div class="col-md-3"></div>
+                </div>  
+            </div>
+        </div>      
+    </div> 
+</body>
+{% endblock %}
