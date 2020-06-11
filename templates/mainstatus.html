@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 top_align">
+        <!-- this the card that would have the data about consumption -->
+        <div class="card text-center">
+            <div class="card-header"> Your Current Consumption</div>
+            <div class="card-body">
+                <!-- this is where we need a link from the switch data to 
+                show where the current consumption -->
+              <div class="status">
+                    15kW
+              </div>
+              <p class="card-text">Current consumption is higer than your average.</p>
+            <!-- in future versions this is where a link would show you the breakdown of 
+            where the current cosumption is coming from -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- this is where there would actually be a graph showing
+                        the customers consumption compared to their usual -->
+                      <h5 class="card-title">Graph comparing to own trend</h5>
+                      <!-- this analysis would come from the app to see if the customer 
+                    is using more or less than the average customers -->
+                      <p class="card-text">Your current consumption 3 kW higher than expected
+                          <br>Any lights you can turn off?
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- this would show the customer their consumption relative to
+                    their neighbours -->
+                      <h5 class="card-title">Graph comparing to neighbours</h5>
+                      <!-- this will have blanket language that will let the customer
+                    understand how much higher or lower their consumption is -->
+                      <p class="card-text">your consumption is lower than your neighbours
+                          <br> thanks for using less!
+                      </p>
+                    </div>
+                </div> 
+            </div>    
+        </div>  
+    </div>
+    <div class="col-md-3"></div>
+</div>
+{{super()}}
+
+{% endblock %}
+

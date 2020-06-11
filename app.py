@@ -6,4 +6,4 @@ Bootstrap(app)
 
 @app.route("/")
 def hello():
-    return render_template("pair-switch.html") 
+    return render_template("alertscreen.html") 

@@ -45,16 +45,19 @@ techer_blue+2=#004376
 .navbar-custom .nav-item:hover .nav-link {
     color: #595959;
 }
-/* footer formating */
-.footer {
+
+
+
+.foot {
     width: 100%;
-    height:5%;
+    padding: 1em;
     color:white;
     background: #00B5B5;
-    position: absolute;
-    bottom: 0;
     font-size: small;
     text-align: center;
+    left: 0;
+    bottom: 0;
+    position: fixed;
 }
 
 /* text formatting on dark background */
@@ -87,6 +90,11 @@ p {
     position: relative;
     top: 10%;
     transform: translateY(10%);
+}
+
+.bottom_align {
+    position: relative;
+    bottom: 0%;
 }
 .center {
     display: block;
@@ -121,21 +129,38 @@ p {
 
 .light_on_dark_button:hover {
     background-color: #F2F2F2;
-  }
-  .light_on_dark_buttonG_2 {
-    background-color:#F2F2F2;
+}
+
+.light_on_dark_buttonG_2 {
+    background-color:white;
     color: #595959;
     font-family: Helvetica;
     font-size: large;
     display: flex;
-    justify-content: Right;
+    border-color: #595959;
+    border-style: solid;
+    justify-content: center;
     align-items: center;
 }
 
-/* .light_on_dark_buttonG_2:hover {
+.light_on_dark_buttonG_2:hover {
     background-color: #F2F2F2;
-  } */
+}
+.dark_on_light_buttonG_2 {
+    background-color: #595959;
+    color:#F2F2F2;
+    font-family: Helvetica;
+    font-size: large;
+    display: flex;
+    border-color: #F2F2F2;
+    border-style: solid;
+    justify-content: center;
+    align-items: center;
+}
 
+.dark_on_light_buttonG_2:hover {
+    background-color: #3B3838;
+}
 .light_on_dark_button_s {
     background-color: white;
     color:#595959;
@@ -149,7 +174,7 @@ p {
 .light_on_dark_button_s:hover {
     background-color: #F2F2F2;
   }
-  .dark_on_light_button_s {
+.dark_on_light_button_s {
     background-color: #595959;
     color:white;
     font-family: Helvetica;
@@ -160,9 +185,6 @@ p {
 .dark_on_light_button_s:hover {
     background-color: #3B3838;
 }
-
-
-
 .light_on_dark_button_fwidth {
     background-color: white;
     border-color: #595959 ;
@@ -249,6 +271,8 @@ p {
     background-color:#3B3838;
 }
 
+
+
 /* border added to the input boxes */
 .form-control {
     border-color: #595959 ;
@@ -311,7 +335,77 @@ input[type="radio"] {
 		box-shadow: 0 0 0 0 rgba(242, 242, 242, 0), 0 0 0 50px rgba(242, 242, 242, 0);
     }
 }
+/* animation */
+.status {
+    background-color: #F2F2F2;
+    font-family: Helvetica;
+    font-size: medium;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: #00B5B5;
+    border-style: solid;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+    display: grid;
+    place-items: center;
 
+    box-shadow: 0 0 0 0 rgba(0, 181,181, 1);
+    animation: pulse_status 2s linear infinite;
+}
+
+@keyframes pulse_status {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 181,181, 0.7), 0 0 0 0 rgba(0, 181,181, 0.7);
+	}
+	33% {
+		box-shadow: 0 0 0 15px rgba(0, 181,181, 0), 0 0 0 0 rgba(0, 181,181, 0.7);
+	}
+	66% {
+		box-shadow: 0 0 0 15px rgba(0, 181,181, 0), 0 0 0 15px rgba(0, 181,181, 0);
+    }
+    100% {
+		box-shadow: 0 0 0 0 rgba(0, 181,181, 0), 0 0 0 15px rgba(0, 181,181, 0);
+    }
+}
+
+
+.sos {
+    background-color: #F2F2F2;
+    font-family: Helvetica;
+    font-size: medium;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: #9E2600;
+    border-style: solid;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+    display: grid;
+    place-items: center;
+
+    box-shadow: 0 0 0 0 rgba(158, 38,0, 1);
+    animation: pulse_status 2s linear infinite;
+}
+
+@keyframes pulse_status {
+	0% {
+		box-shadow: 0 0 0 0 rgba(158, 38,0, 0.7), 0 0 0 0 rgba(158, 38,0, 0.7);
+	}
+	33% {
+		box-shadow: 0 0 0 15px rgba(158, 38,0, 0), 0 0 0 0 rgba(158, 38,0, 0.7);
+	}
+	66% {
+		box-shadow: 0 0 0 15px rgba(158, 38,0, 0), 0 0 0 15px rgba(158, 38,0, 0);
+    }
+    100% {
+		box-shadow: 0 0 0 0 rgba(158, 38,0, 0), 0 0 0 15px rgba(158, 38,0,0);
+    }
+}
 .setting {
     width:100%;
     text-align: center;
@@ -396,4 +490,16 @@ input[type="radio"] {
     border-radius: 10px;
     padding-right: 5px;
     padding-left: 5px;
+}
+.card {
+    border-color: #00B5B5;
+    border-style: solid;
+    border-width: 2px;
+    margin: 10px;
+    float: none;
+}
+.card-header {
+    border-bottom: #00B5B5;
+    border-width: 1px;
+    border-style: inset;
 }
