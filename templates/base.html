@@ -6,6 +6,7 @@ Cleantecher
 
 {% block head %}
 {{super()}}
+<link rel="icon" href="{{ url_for('static', filename='teal.png') }}" type="image/gif" sizes="16x16">
 {% endblock %}
 
 {% block styles %}
@@ -30,13 +31,13 @@ Cleantecher
                 <div id="navbarContent" class="collapse navbar-collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="/">Home</a>
+                            <a class="nav-link" href="/status">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="switchsettings">Switch Preferences</a>
+                            <a class="nav-link" href="switchsettings">Switch Settings</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="UserHomeInfo">User Settings</a>
+                            <a class="nav-link" href="usersettings">User Settings</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="paysetup">Pay Settings</a>
@@ -54,6 +55,10 @@ Cleantecher
 
 {% block content %}
 <div class="foot"> 
-     something
+    Inspired by the
+    <a href="https://en.wikipedia.org/wiki/Axon_hillock#:~:text=The%20axon%20hillock%20is%20the,action%20potentials%E2%80%94the%20trigger%20zone." 
+    style="font-weight: bold; color: white;">
+         Axion Hillox
+    </a> 
 </div>
 {% endblock %}
